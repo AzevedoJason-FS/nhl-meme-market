@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "./Header";
 import hole from "./hole.webm";
 import stars from "./stars.svg";
+import btn from "./btn.svg";
 import btn2 from "./btn2.svg";
 import btn3 from "./btn3.svg";
 import graph from "./graph.svg";
@@ -9,6 +10,8 @@ import logo from "./logo.svg";
 import globe from "./globe.svg";
 import googleRank from "./google-rank.svg";
 import t from "./t.svg";
+import box from "./box.svg";
+import bullet from "./bulletPoint.svg";
 
 const Home = () => {
   return (
@@ -142,7 +145,7 @@ const Home = () => {
                     {icon}
                   </div>
                 ))}
-                <div className="header" style={{ color: "white", fontWeight: "600", fontSize: "20px", paddingTop: "30px" }}>
+                <div className="header" style={{ color: "white", fontWeight: "600", fontSize: "20px", paddingTop: "30px", background: "" }}>
                   $180
                 </div>
               </div>
@@ -157,20 +160,76 @@ const Home = () => {
             </div>
             <h3>Why choose Orbitly.</h3>
             <p id="subtitle">We gear up your business so it can succeed online </p>
-            <div style={{ display: "flex", justifyContent: "space-around", alignItems: 'center', marginTop: '2rem' }}>
-              <div style={{ maxWidth: "44%" }}>
-                <h4 id="gradient-title" style={{fontWeight: '600', fontSize: "20px"}}>Build Visibility That Lasts — Not Just Temporary Clicks</h4>
-                <p style={{ color: "white" }}>
+            <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center", marginTop: "2rem" }}>
+              <div id="text-div">
+                <h4 id="gradient-title" style={{ fontWeight: "600", fontSize: "20px" }}>
+                  Build Visibility That Lasts — Not Just Temporary Clicks
+                </h4>
+                <p style={{ color: "white", fontSize: "18px" }}>
                   If your website or social media content isn’t optimized, running ads can be a waste because your content won’t rank well on Google,
                   and you’ll struggle to turn clicks into customers.
                 </p>
-                <p style={{ color: "white" }}>
+                <p style={{ color: "white", fontSize: "18px" }}>
                   Our AI tools optimize your content to rank higher on Google therefore driving more organic traffic — without wasting thousands on
                   ineffective ads
                 </p>
               </div>
-
               <img src={googleRank} alt="Google SEO Rank graphic" />
+            </div>
+          </div>
+          <div className="text-box" id="pricing">
+            <div className="category">
+              <p style={{ margin: "0" }}>Pricing</p>
+            </div>
+            <h3>
+              We like keeping things simple<br></br>
+              One plan. One price. infinite growth
+            </h3>
+            <p id="subtitle">We gear up your business so it can succeed online </p>
+            <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center", marginTop: "2rem", flexDirection: "column" }}>
+              <span style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "20px" }}>
+                <p style={{ color: "rgba(255, 255, 255, 0.6)" }}>Only</p>
+                <h3
+                  style={{ fontSize: "48px", fontWeight: "600", textShadow: "rgb(160 148 255 / 60%) 0 2px 30px", marginTop: "0" }}
+                  id="gradient-title">
+                  $180
+                </h3>
+                <p style={{ color: "rgba(255, 255, 255, 0.6)" }}>/month</p>
+              </span>
+              <div className="bullet-box">
+                <div className="bullets">
+                  <span>
+                    <img src={bullet} alt="Pricing Background Box" />
+                    <p>Done-For-You Website & Funnel Setup</p>
+                  </span>
+                  <span>
+                    <img src={bullet} alt="Pricing Background Box" />
+                    <p>AI-Powered Traffic & Lead Generation</p>
+                  </span>
+                  <span>
+                    <img src={bullet} alt="Pricing Background Box" />
+                    <p>Performance Analytics Reports</p>
+                  </span>
+                </div>
+                <div className="bullets">
+                  <span>
+                    <img src={bullet} alt="Pricing Background Box" />
+                    <p>Content & Social Media Promotion</p>
+                  </span>
+                  <span>
+                    <img src={bullet} alt="Pricing Background Box" />
+                    <p>Fully Managed — No Tech Skills Needed</p>
+                  </span>
+                  <span>
+                    <img src={bullet} alt="Pricing Background Box" />
+                    <p>Priority Support + Growth Insights</p>
+                  </span>
+                </div>
+              </div>
+              <Link className="acc-btn" to="/" style={{marginTop: '2rem'}}>
+                <img src={btn} alt="Onboarding Button" />
+              </Link>
+              <img src={box} alt="Pricing Background Box" style={{ position: "absolute", marginTop: "-6rem", zIndex: '-1' }} />
             </div>
           </div>
         </div>

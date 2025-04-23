@@ -300,3 +300,33 @@ position: absolute;
       transform: scale(1);
   }
 }
+
+#text-div{
+  max-width: 44%;
+
+}
+
+#pricing{
+  position: relative;
+}
+
+#pricing::before{
+  background: radial-gradient(50% 50% at 50% 50%, #7449fd1f 0, #01001300 100%);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  margin-top: 20rem;
+}
+
+.bullet-box{
+  display: flex;
+  gap: 40px;
+  margin-top: 2rem;
+}
+
+.bullets span{
+  display: flex;
+  gap: 10px;
+  color: white;
+}
