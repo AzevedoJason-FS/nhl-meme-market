@@ -12,7 +12,7 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 8px;
   padding: 9px 20px;
-  width: 1200px;
+  max-width: 1200px;
   margin: 2rem auto;
   display: flex;
   flex-direction: row;
@@ -52,6 +52,10 @@ header .acc-btn {
 .content {
   max-width: 1200px;
   margin: auto;
+}
+
+.landing{
+  position: relative;
 }
 
 .landing video {
@@ -197,10 +201,12 @@ header .acc-btn {
   text-align: left;
   color: white;
   font-weight: 600;
+  min-height: 21px;
 }
 
 .feature-column{
   width: 500px;
+  border-right: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .ads-column{
@@ -308,6 +314,7 @@ position: absolute;
 
 #pricing{
   position: relative;
+  margin-top: 3rem;
 }
 
 #pricing::before{

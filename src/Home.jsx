@@ -43,7 +43,7 @@ const Home = () => {
           </video>
           <div className="info-1">
             <div>
-              <h4 style={{ color: "white", fontSize: "20px", fontWeight: "600" }}>
+              <h4 style={{ color: "white", fontSize: "20px", fontWeight: "600", letterSpacing: '-0.8px' }}>
                 Optimize with ease and climb the Google<br></br>Search Engine ladder like never before.
               </h4>
               <p id="gradient-title">All done-for-you marketing service:</p>
@@ -61,8 +61,8 @@ const Home = () => {
                 Who are we
               </p>
             </div>
-            <h3>
-              We are Orbitly, we help business owners like you generate organic traffic using <br></br>Ai-driven content, SEO targeting, and social
+            <h3 style={{maxWidth: '1000px'}}>
+              We are Orbitly, we help business owners like you generate organic traffic using Ai-driven content, SEO targeting, and social
               media focus. Fully done-for-you so you can focus on running your business.
             </h3>
           </div>
@@ -128,7 +128,7 @@ const Home = () => {
                     {icon}
                   </div>
                 ))}
-                <div className="header" style={{ color: "white", fontWeight: "600", fontSize: "22px" }}>
+                <div className="header" style={{ color: "rgba(255, 255, 255, 0.6)", fontWeight: "500", fontSize: "20px" }}>
                   Over $1,500
                 </div>
               </div>
@@ -174,7 +174,9 @@ const Home = () => {
                   ineffective ads
                 </p>
               </div>
+              <div className="info-1" style={{marginTop: '0'}}>
               <img src={googleRank} alt="Google SEO Rank graphic" />
+              </div>
             </div>
           </div>
           <div className="text-box" id="pricing">
@@ -226,11 +228,22 @@ const Home = () => {
                   </span>
                 </div>
               </div>
-              <Link className="acc-btn" to="/" style={{marginTop: '2rem'}}>
+              <Link className="acc-btn" to="/" style={{ marginTop: "2rem" }}>
                 <img src={btn} alt="Onboarding Button" />
               </Link>
-              <img src={box} alt="Pricing Background Box" style={{ position: "absolute", marginTop: "-6rem", zIndex: '-1' }} />
+              <img src={box} alt="Pricing Background Box" style={{ position: "absolute", marginTop: "-6rem", zIndex: "-1" }} />
             </div>
+          </div>
+          <div className="text-box" style={{marginTop: '8rem'}}>
+            <div className="category">
+              <p style={{ margin: "0" }} className="cat-text">
+               Get started
+              </p>
+            </div>
+            <h3>
+            Grow smarter with Orbitly.
+            </h3>
+            <p id="subtitle">Own the Results — Don’t Just Rent Them With Ads</p>
           </div>
         </div>
       </div>
