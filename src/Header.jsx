@@ -13,7 +13,7 @@ const Header = () => {
         <Link to="/research/LeadrPro">Process</Link>
         <Link to="/research/LeadrPro">Services</Link>
         <Link to="/research/LeadrPro">Pricing</Link>
-        <Link to="/research/LeadrPro">Resources</Link>
+        <Link to="/blog">Blog</Link>
       </div>
       <Link className="acc-btn" to="/research/LeadrPro">
         <img src={btn} alt="Onboarding Button" />

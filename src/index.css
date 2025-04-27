@@ -54,7 +54,7 @@ header .acc-btn {
   margin: auto;
 }
 
-.landing{
+.landing {
   position: relative;
 }
 
@@ -67,7 +67,7 @@ header .acc-btn {
 
 .landing .category {
   border-radius: 90px;
-  background: linear-gradient(180deg, rgba(60, 8, 126, 0) 0%, rgba(60, 8, 126, .32) 100%), rgba(113, 47, 255, .12);
+  background: linear-gradient(180deg, rgba(60, 8, 126, 0) 0%, rgba(60, 8, 126, 0.32) 100%), rgba(113, 47, 255, 0.12);
   box-shadow: inset 0 0 12px #bf97ff3d;
   color: #e0dcff;
   border: 1px solid #ba9cff;
@@ -82,8 +82,9 @@ header .acc-btn {
   margin: 100px auto 0 auto;
 }
 
-.landing .category .cat-text{
-  background: linear-gradient(0deg, rgba(255, 255, 255, .4), rgba(255, 255, 255, .4)), linear-gradient(90.01deg, #e59cff .01%, #ba9cff 50.01%, #9cb2ff 100%);
+.landing .category .cat-text {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+    linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%);
   background-blend-mode: normal, screen;
   -webkit-background-clip: text;
   background-clip: text;
@@ -165,7 +166,7 @@ header .acc-btn {
   position: relative;
 }
 
-.comparison-table::before{
+.comparison-table::before {
   background: radial-gradient(50% 50% at 50% 50%, #7449fd1f 0, #01001300 100%);
   content: "";
   inset: 0;
@@ -192,7 +193,7 @@ header .acc-btn {
   border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-.feature-column .header{
+.feature-column .header {
   text-align: left;
   padding: 34.4px 12px;
 }
@@ -204,16 +205,20 @@ header .acc-btn {
   min-height: 22px;
 }
 
-.feature-column{
+.feature-column {
   width: 500px;
   border-right: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-.ads-column{
+.ads-column {
   width: 300px;
 }
 
-.ads-column .header{
+.ads-column .cell {
+  min-height: 22px;
+}
+
+.ads-column .header {
   padding: 34px 12px;
 }
 
@@ -226,6 +231,10 @@ header .acc-btn {
   width: 300px;
 }
 
+.orbitly-column .cell {
+  min-height: 22px;
+}
+
 .orbitly-logo {
   display: flex;
   align-items: center;
@@ -233,12 +242,11 @@ header .acc-btn {
   justify-content: center;
 }
 
-.orbitly-logo p{
+.orbitly-logo p {
   font-size: 20px;
   color: white;
   font-weight: 700;
 }
-
 
 .wrapper {
   position: absolute;
@@ -252,13 +260,13 @@ header .acc-btn {
   right: 0;
 }
 
-.arrow { 
-position: absolute;
+.arrow {
+  position: absolute;
   border-radius: 50%;
   top: 25px;
   left: 25px;
   width: 50px;
-  height:50px;
+  height: 50px;
   margin: auto;
 }
 
@@ -271,53 +279,52 @@ position: absolute;
   height: 100%;
   z-index: 1;
   animation: pulse 8s ease-out infinite;
-  
+
   &.ring-2 {
-    animation-delay: 2000ms
+    animation-delay: 2000ms;
   }
-  
+
   &.ring-3 {
-    animation-delay: 4000ms
+    animation-delay: 4000ms;
   }
-  
+
   &.ring-4 {
-    animation-delay: 6000ms
+    animation-delay: 6000ms;
   }
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 2px #1E1B2F;
-      transform: scale(0);
-      opacity: 0;
+    box-shadow: 0 0 0 2px #1e1b2f;
+    transform: scale(0);
+    opacity: 0;
   }
-  
+
   50% {
     box-shadow: 0 0 0 2px rgba(70, 63, 108, 0.66);
-      opacity: 1;
+    opacity: 1;
   }
-  
+
   85% {
     box-shadow: 0 0 0 2px rgba(70, 63, 108, 0.33);
   }
-  
+
   100% {
     box-shadow: 0 0 0 2px rgba(70, 63, 108, 0);
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 
-#text-div{
+#text-div {
   max-width: 44%;
-
 }
 
-#pricing{
+#pricing {
   position: relative;
   margin-top: 3rem;
 }
 
-#pricing::before{
+#pricing::before {
   background: radial-gradient(50% 50% at 50% 50%, #7449fd1f 0, #01001300 100%);
   content: "";
   inset: 0;
@@ -326,14 +333,135 @@ position: absolute;
   margin-top: 20rem;
 }
 
-.bullet-box{
+.bullet-box {
   display: flex;
   gap: 40px;
   margin-top: 2rem;
 }
 
-.bullets span{
+.bullets span {
   display: flex;
   gap: 10px;
   color: white;
+}
+
+.featured {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.featured-post {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.featured-post img {
+  width: 100%;
+  border-radius: 8px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.featured-post h2 {
+  color: white;
+  font-size: 28px;
+  letter-spacing: -0.8px;
+  padding: 0 20px;
+}
+
+.featured-post-summary {
+  padding: 0 20px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.small-feature {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.small {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-category {
+  /* color: white !important; */
+  font-weight: 600;
+  /* background-color: #9386ff; */
+  color: #9386ff !important;
+  padding-right: 12px !important;
+  margin: 0 12px 0 0;
+  font-size: 14px;
+}
+
+.small-feature-post {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  padding-bottom: 10px;
+  gap: 20px;
+}
+
+.small-feature-post .image {
+  min-width: 26%;
+  height: 90px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.small-feature-post h3 {
+  color: white;
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.small-feature-post p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.category-list button {
+  all: unset;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 90px;
+  /* background: linear-gradient(180deg, rgba(60, 8, 126, 0) 0%, rgba(60, 8, 126, 0.32) 100%), rgba(113, 47, 255, 0.12); */
+  box-shadow: inset 0 0 12px #bf97ff3d;
+  color: #e0dcff;
+  border: 1px solid #9386ff;
+  width: fit-content;
+  padding: 6px 14px;
+  box-sizing: border-box;
+  display: flex;
+  filter: drop-shadow(0px 4px 20px rgba(68, 68, 221, 0.2));
+  font-size: 12px;
+}
+
+.category-list h2 {
+  font-size: 38px;
+  color: white;
+  letter-spacing: -1px;
+  margin: 0;
+  margin-right: 20px;
 }

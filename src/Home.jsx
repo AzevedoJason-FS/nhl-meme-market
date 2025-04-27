@@ -7,6 +7,7 @@ import btn2 from "./btn2.svg";
 import btn3 from "./btn3.svg";
 import graph from "./graph.svg";
 import logo from "./logo.svg";
+import map from "./map.svg";
 import globe from "./globe.svg";
 import googleRank from "./google-rank.svg";
 import t from "./t.svg";
@@ -146,7 +147,7 @@ const Home = () => {
                   </div>
                 ))}
                 <div className="header" style={{ color: "white", fontWeight: "600", fontSize: "20px", paddingTop: "30px", background: "" }}>
-                  $180
+                  $200
                 </div>
               </div>
             </div>
@@ -156,13 +157,13 @@ const Home = () => {
           </div>
           <div className="text-box">
             <div className="category">
-              <p style={{ margin: "0" }}>Process</p>
+              <p style={{ margin: "0" }}>Orbitly Digital Marketing</p>
             </div>
             <h3>Why choose Orbitly.</h3>
             <p id="subtitle">We gear up your business so it can succeed online </p>
-            <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center", marginTop: "2rem" }}>
+            <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center", marginTop: "2rem", letterSpacing: '-0.8px' }}>
               <div id="text-div">
-                <h4 id="gradient-title" style={{ fontWeight: "600", fontSize: "20px" }}>
+                <h4 id="gradient-title" style={{ fontWeight: "600", fontSize: "32px" }}>
                   Build Visibility That Lasts — Not Just Temporary Clicks
                 </h4>
                 <p style={{ color: "white", fontSize: "18px" }}>
@@ -176,6 +177,24 @@ const Home = () => {
               </div>
               <div className="info-1" style={{marginTop: '0'}}>
               <img src={googleRank} alt="Google SEO Rank graphic" />
+              </div>
+            </div>
+            <div style={{ display: "flex", flexDirection: 'row-reverse', justifyContent: "space-around", alignItems: "center", marginTop: "8rem" }}>
+              <div id="text-div">
+                <h4 id="gradient-title" style={{ fontWeight: "600", fontSize: "32px", letterSpacing: '-0.8px' }}>
+                Why pay more for the same results?
+                </h4>
+                <p style={{ color: "white", fontSize: "18px" }}>
+                  If your website or social media content isn’t optimized, running ads can be a waste because your content won’t rank well on Google,
+                  and you’ll struggle to turn clicks into customers.
+                </p>
+                <p style={{ color: "white", fontSize: "18px" }}>
+                  Our AI tools optimize your content to rank higher on Google therefore driving more organic traffic — without wasting thousands on
+                  ineffective ads
+                </p>
+              </div>
+              <div className="info-1" style={{marginTop: '0'}}>
+              <img src={map} alt="Georgia Digital Marketing Prices" style={{maxWidth: '380px'}}/>
               </div>
             </div>
           </div>
@@ -194,7 +213,7 @@ const Home = () => {
                 <h3
                   style={{ fontSize: "48px", fontWeight: "600", textShadow: "rgb(160 148 255 / 60%) 0 2px 30px", marginTop: "0" }}
                   id="gradient-title">
-                  $180
+                  $200
                 </h3>
                 <p style={{ color: "rgba(255, 255, 255, 0.6)" }}>/month</p>
               </span>
@@ -220,7 +239,7 @@ const Home = () => {
                   </span>
                   <span>
                     <img src={bullet} alt="Pricing Background Box" />
-                    <p>Fully Managed — No Tech Skills Needed</p>
+                    <p>Competitive Analysis</p>
                   </span>
                   <span>
                     <img src={bullet} alt="Pricing Background Box" />
