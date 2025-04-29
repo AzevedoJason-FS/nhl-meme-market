@@ -366,9 +366,6 @@ header .acc-btn {
 .square2 img{
   width: 100%;
   max-width: 500px;
-  bottom: -5rem;
-  right: -4rem;
-  position: absolute;
 }
 
 #pricing {
