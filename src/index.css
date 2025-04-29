@@ -359,11 +359,16 @@ header .acc-btn {
   border-radius: 12px;
   padding: 60px 30px;
   background-color: rgba(255, 255, 255, 0.02);
+  position: relative;
+  overflow: hidden;
 }
 
 .square2 img{
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
+  bottom: -5rem;
+  right: -4rem;
+  position: absolute;
 }
 
 #pricing {

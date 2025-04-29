@@ -8,7 +8,7 @@ import btn3 from "./btn3.svg";
 import graph from "./graph.svg";
 import logo from "./logo.svg";
 import globe from "./globe.svg";
-// import ill from "./ill.svg";
+import ill from "./ill.svg";
 import googleRank from "./google-rank.svg";
 import t from "./t.svg";
 import box from "./box.svg";
@@ -148,7 +148,7 @@ const Home = () => {
               </div>
             </div>
             <p style={{ fontSize: "18px", color: "rgba(255, 255, 255, 0.6)", marginTop: "4rem" }}>
-              Don't fall for digital marketing agencies that take your money and spend $1,500 - $2,000 on ads just for temporary numbers.
+              Don't fall for digital marketing agencies that take your money and spend $1,500 - $5,000 on ads just for temporary numbers.
             </p>
           </div>
           <div className="text-box" style={{ marginTop: "4rem" }}>
@@ -172,14 +172,14 @@ const Home = () => {
               </div>
               <div className="square2">
                 <div id="text-div">
-                  <h2 style={{ textAlign: "left" }}>Did you know..</h2>
+                  <h2 style={{ textAlign: "left", marginTop: '0' }}>Did you know..</h2>
                   <p>
                     A lot of businesses post great content —{" "}
                     <b style={{ fontWeight: "400", color: "rgba(255, 255, 255, 0.6)" }}>
                       but without strategic Targeting, Data Analysis, and ptimized SEO, they miss 80% of potential growth.
                     </b>
                   </p>
-                  <p>For example, using the wrong hashtags, could be setting you back 80%</p>
+                  <p style={{marginBottom: '40px'}}>For example, using the wrong hashtags, could be setting you back 80%</p>
                   <h3>We're Your #1 Supporter</h3>
                   <p>
                     We completely understand the challenges you're facing.
@@ -187,7 +187,7 @@ const Home = () => {
                       We're here to help you grow with clarity, confidence, and results that actually matter.
                     </b>
                   </p>
-                  {/* <img src={ill} alt="Google SEO Rank graphic" /> */}
+                  <img src={ill} alt="Google SEO Rank graphic" />
                 </div>
               </div>
             </div>
