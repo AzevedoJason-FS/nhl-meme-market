@@ -7,12 +7,14 @@ import btn2 from "./btn2.svg";
 import btn3 from "./btn3.svg";
 import graph from "./graph.svg";
 import logo from "./logo.svg";
-import map from "./map.svg";
 import globe from "./globe.svg";
+// import ill from "./ill.svg";
 import googleRank from "./google-rank.svg";
 import t from "./t.svg";
 import box from "./box.svg";
 import bullet from "./bulletPoint.svg";
+import ContactForm from "./ContactForm";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -44,7 +46,7 @@ const Home = () => {
           </video>
           <div className="info-1">
             <div>
-              <h4 style={{ color: "white", fontSize: "20px", fontWeight: "600", letterSpacing: '-0.8px' }}>
+              <h4 style={{ color: "white", fontSize: "20px", fontWeight: "600", letterSpacing: "-0.8px" }}>
                 Optimize with ease and climb the Google<br></br>Search Engine ladder like never before.
               </h4>
               <p id="gradient-title">All done-for-you marketing service:</p>
@@ -62,12 +64,12 @@ const Home = () => {
                 Who are we
               </p>
             </div>
-            <h3 style={{maxWidth: '1000px'}}>
-              We are Orbitly, we help business owners like you generate organic traffic using Ai-driven content, SEO targeting, and social
-              media focus. Fully done-for-you so you can focus on running your business.
+            <h3 style={{ maxWidth: "1000px" }}>
+              We are Orbitly, we help business owners like you generate organic traffic using Ai-driven content, SEO targeting, and social media
+              focus. Fully done-for-you so you can focus on running your business.
             </h3>
           </div>
-          <div className="text-box" style={{ marginTop: "4rem", position: "relative" }}>
+          <div className="text-box" style={{ marginTop: "10rem", position: "relative" }}>
             <img src={globe} alt="Ai Globe" />
             <div className="category" style={{ margin: "-180px auto 0 auto" }}>
               <p style={{ margin: "0" }}>Process</p>
@@ -75,15 +77,15 @@ const Home = () => {
             <h3>Your path for out-of-this world growth.</h3>
             <p id="subtitle">A simple, effective approach to deliver excellence.</p>
             <img src={t} alt="Orbitly SEO Optimization Process" style={{ marginTop: "3rem" }} />
-            <div class="wrapper">
-              <span class="ring ring-1"></span>
-              <span class="ring ring-2"></span>
-              <span class="ring ring-3"></span>
-              <span class="ring ring-4"></span>
-              <span class="arrow"></span>
+            <div className="wrapper">
+              <span className="ring ring-1"></span>
+              <span className="ring ring-2"></span>
+              <span className="ring ring-3"></span>
+              <span className="ring ring-4"></span>
+              <span className="arrow"></span>
             </div>
           </div>
-          <div className="text-box">
+          <div className="text-box" style={{ marginTop: "4rem" }}>
             <div className="category">
               <p style={{ margin: "0" }} className="cat-text">
                 Services
@@ -129,9 +131,6 @@ const Home = () => {
                     {icon}
                   </div>
                 ))}
-                <div className="header" style={{ color: "rgba(255, 255, 255, 0.6)", fontWeight: "500", fontSize: "20px" }}>
-                  Over $1,500
-                </div>
               </div>
 
               <div className="column orbitly-column">
@@ -146,55 +145,50 @@ const Home = () => {
                     {icon}
                   </div>
                 ))}
-                <div className="header" style={{ color: "white", fontWeight: "600", fontSize: "20px", paddingTop: "30px", background: "" }}>
-                  $200
-                </div>
               </div>
             </div>
-            <p style={{ fontSize: "18px", color: "rgba(255, 255, 255, 0.6)" }}>
-              Don't fall for digital marketing agencies that simply take your money and spend $1,500 - $2,000 on ads just for temporary numbers.
+            <p style={{ fontSize: "18px", color: "rgba(255, 255, 255, 0.6)", marginTop: "4rem" }}>
+              Don't fall for digital marketing agencies that take your money and spend $1,500 - $2,000 on ads just for temporary numbers.
             </p>
           </div>
-          <div className="text-box">
+          <div className="text-box" style={{ marginTop: "4rem" }}>
             <div className="category">
               <p style={{ margin: "0" }}>Orbitly Digital Marketing</p>
             </div>
             <h3>Why choose Orbitly.</h3>
             <p id="subtitle">We gear up your business so it can succeed online </p>
-            <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center", marginTop: "2rem", letterSpacing: '-0.8px' }}>
-              <div id="text-div">
-                <h4 id="gradient-title" style={{ fontWeight: "600", fontSize: "32px" }}>
-                  Build Visibility That Lasts — Not Just Temporary Clicks
-                </h4>
-                <p style={{ color: "white", fontSize: "18px" }}>
-                  If your website or social media content isn’t optimized, running ads can be a waste because your content won’t rank well on Google,
-                  and you’ll struggle to turn clicks into customers.
-                </p>
-                <p style={{ color: "white", fontSize: "18px" }}>
-                  Our AI tools optimize your content to rank higher on Google therefore driving more organic traffic — without wasting thousands on
-                  ineffective ads
-                </p>
+            <div className="square-content">
+              <div className="square1">
+                <div id="text-div">
+                  <h3>Build Visibility That Lasts.</h3>
+                  <p>
+                    If your website or social media content isn’t optimized,
+                    <b style={{ fontWeight: "400", color: "rgba(255, 255, 255, 0.6)" }}>
+                      running ads can be a waste since poor rankings and weak engagement will make it hard to turn clicks into customers.
+                    </b>
+                  </p>
+                </div>
+                <img src={googleRank} alt="Google SEO Rank graphic" />
               </div>
-              <div className="info-1" style={{marginTop: '0'}}>
-              <img src={googleRank} alt="Google SEO Rank graphic" />
-              </div>
-            </div>
-            <div style={{ display: "flex", flexDirection: 'row-reverse', justifyContent: "space-around", alignItems: "center", marginTop: "8rem" }}>
-              <div id="text-div">
-                <h4 id="gradient-title" style={{ fontWeight: "600", fontSize: "32px", letterSpacing: '-0.8px' }}>
-                Why pay more for the same results?
-                </h4>
-                <p style={{ color: "white", fontSize: "18px" }}>
-                  If your website or social media content isn’t optimized, running ads can be a waste because your content won’t rank well on Google,
-                  and you’ll struggle to turn clicks into customers.
-                </p>
-                <p style={{ color: "white", fontSize: "18px" }}>
-                  Our AI tools optimize your content to rank higher on Google therefore driving more organic traffic — without wasting thousands on
-                  ineffective ads
-                </p>
-              </div>
-              <div className="info-1" style={{marginTop: '0'}}>
-              <img src={map} alt="Georgia Digital Marketing Prices" style={{maxWidth: '380px'}}/>
+              <div className="square2">
+                <div id="text-div">
+                  <h2 style={{ textAlign: "left" }}>Did you know..</h2>
+                  <p>
+                    A lot of businesses post great content —{" "}
+                    <b style={{ fontWeight: "400", color: "rgba(255, 255, 255, 0.6)" }}>
+                      but without strategic Targeting, Data Analysis, and ptimized SEO, they miss 80% of potential growth.
+                    </b>
+                  </p>
+                  <p>For example, using the wrong hashtags, could be setting you back 80%</p>
+                  <h3>We're Your #1 Supporter</h3>
+                  <p>
+                    We completely understand the challenges you're facing.
+                    <b style={{ fontWeight: "400", color: "rgba(255, 255, 255, 0.6)" }}>
+                      We're here to help you grow with clarity, confidence, and results that actually matter.
+                    </b>
+                  </p>
+                  {/* <img src={ill} alt="Google SEO Rank graphic" /> */}
+                </div>
               </div>
             </div>
           </div>
@@ -206,16 +200,14 @@ const Home = () => {
               We like keeping things simple<br></br>
               One plan. One price. infinite growth
             </h3>
-            <p id="subtitle">We gear up your business so it can succeed online </p>
+            <p id="subtitle">Online Marketing has never been so affordable</p>
             <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center", marginTop: "2rem", flexDirection: "column" }}>
               <span style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "20px" }}>
-                <p style={{ color: "rgba(255, 255, 255, 0.6)" }}>Only</p>
                 <h3
                   style={{ fontSize: "48px", fontWeight: "600", textShadow: "rgb(160 148 255 / 60%) 0 2px 30px", marginTop: "0" }}
                   id="gradient-title">
-                  $200
+                  Start Growing Today
                 </h3>
-                <p style={{ color: "rgba(255, 255, 255, 0.6)" }}>/month</p>
               </span>
               <div className="bullet-box">
                 <div className="bullets">
@@ -243,7 +235,7 @@ const Home = () => {
                   </span>
                   <span>
                     <img src={bullet} alt="Pricing Background Box" />
-                    <p>Priority Support + Growth Insights</p>
+                    <p>100% more affordable</p>
                   </span>
                 </div>
               </div>
@@ -253,18 +245,31 @@ const Home = () => {
               <img src={box} alt="Pricing Background Box" style={{ position: "absolute", marginTop: "-6rem", zIndex: "-1" }} />
             </div>
           </div>
-          <div className="text-box" style={{marginTop: '8rem'}}>
-            <div className="category">
-              <p style={{ margin: "0" }} className="cat-text">
-               Get started
-              </p>
+          <section class="contact-section">
+            <div class="contact-left">
+             
+              <h1>We can't wait to embark on this journey with you</h1>
+              <p>Whether you have questions or are ready to discuss your business, we’re here to help. Reach out today.</p>
+              <div class="contact-info">
+                <div class="info-item">
+                  <span>📧</span>
+                  <span>admin@raddision.com</span>
+                </div>
+                <div class="info-item">
+                  <span>📞</span>
+                  <span>(969) 819-8061</span>
+                </div>
+                <div class="info-item">
+                  <span>📍</span>
+                  <span>Summervile, GA</span>
+                </div>
+              </div>
             </div>
-            <h3>
-            Grow smarter with Orbitly.
-            </h3>
-            <p id="subtitle">Own the Results — Don’t Just Rent Them With Ads</p>
-          </div>
+
+            <ContactForm />
+          </section>
         </div>
+        <Footer />
       </div>
     </div>
   );
