@@ -55,6 +55,66 @@ header a {
 
 header .acc-btn {
   display: flex;
+  transition: 0.3s;
+}
+
+header .acc-btn:hover{
+  opacity: 0.6;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s ease;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  padding: 0 1rem;
+  color: white;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  top: 100%;
+  left: -2rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  max-width: 1200px;
+  z-index: 99;
+  background-color: rgb(8, 5, 21);
+  border-radius: 8px;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown-menu a {
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ffffff19;
+  border-radius: 8px;
 }
 
 .content {
@@ -264,7 +324,7 @@ header .acc-btn {
   position: absolute;
   width: 200px;
   height: 200px;
-  top: 76.5%;
+  top: 75.5%;
   transform: translateY(-50%);
   margin-left: auto;
   margin-right: auto;
@@ -758,7 +818,7 @@ input {
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
