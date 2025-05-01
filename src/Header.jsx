@@ -40,7 +40,7 @@ const Header = () => {
           )}
         </div>
 
-        <Link to="/">FAQ</Link>
+        <Link to="/faq">FAQ</Link>
         <Link to="/blog">Blog</Link>
       </div>
 

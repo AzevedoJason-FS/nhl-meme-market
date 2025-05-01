@@ -3,6 +3,7 @@ import Home from "./Home";
 import Blog from "./Blog"
 import GetStarted from "./GetStarted";
 import About from "./About";
+import FAQ from "./FAQ";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/get-started" element={<GetStarted />} />
         <Route path="/about-us" element={<About />} />
+        <Route path="/faq" element={<FAQ />} />
         {/* 
         <Route path="/services" element={<Blog />} />
         <Route path="/seo-optimization" element={<Blog />} />
