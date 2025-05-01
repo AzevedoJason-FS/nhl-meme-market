@@ -11,13 +11,15 @@ const Header = () => {
 
   return (
     <header>
+      <Link to="/">
       <span className="logo">
         <img src={logo} alt="Orbitly Logo" />
         <h2>Orbitly</h2>
       </span>
+      </Link>
 
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
-        <Link to="/">About us</Link>
+        <Link to="/about-us">About us</Link>
 
         {/* Dropdown for Services */}
         <div
@@ -28,9 +30,10 @@ const Header = () => {
           <span className="dropdown-toggle">Services</span>
           {dropdownOpen && (
             <div className="dropdown-menu">
-              <Link to="/web-design">Web Design</Link>
-              <Link to="/seo">SEO</Link>
-              <Link to="/marketing">Marketing</Link>
+            <Link to="/research/LeadrPro">Website Design & Development</Link>
+            <Link to="/research/LeadrPro">Google Business Profile Optimization</Link>
+            <Link to="/research/LeadrPro">SEO Optimization</Link>
+            <Link to="/research/LeadrPro">Social Media Content Design</Link>
             </div>
           )}
         </div>

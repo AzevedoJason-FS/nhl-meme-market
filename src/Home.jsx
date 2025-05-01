@@ -55,7 +55,9 @@ const Home = () => {
               <p>💻 Website Landing Page Optimization</p>
               <p>🔍 Ai SEO Optimized Content</p>
               <p>📱 Social Media Exposure</p>
-              <p><img src={icon} alt="Google MyBusiness Optimization" style={{width: '16px'}}/> Google MyBusiness Profile Optimization</p>
+              <p>
+                <img src={icon} alt="Google MyBusiness Optimization" style={{ width: "16px" }} /> Google MyBusiness Profile Optimization
+              </p>
               <p style={{ marginBottom: "26px" }}>📈 Traffic Analytics Report</p>
             </div>
             <img src={graph} alt="Digital Marketing Georgia - Local SEO and Social Media Strategy" />
@@ -72,13 +74,16 @@ const Home = () => {
             </h3>
           </div>
           <div className="text-box" style={{ position: "relative" }}>
-            <img src={globe} alt="Georgia digital marketing experts" style={{width: '100%'}}/>
+            <img src={globe} alt="Georgia digital marketing experts" style={{ width: "100%" }} />
             <div className="category" style={{ margin: "-180px auto 0 auto" }}>
               <p style={{ margin: "0" }}>Process</p>
             </div>
             <h3>Your path for out-of-this world growth.</h3>
-            <p id="subtitle">A simple, effective approach to deliver excellence.</p>
-            <img src={t} alt="SEO services Georgia" style={{ width: '100%' }} />
+            <p id="subtitle">
+              We understand how to grow visibility in your specific market.<br></br>Whether you're in Georgia or beyond, we combine localized SEO, smart ad
+              targeting, and community engagement to get you seen by the right people.
+            </p>
+            <img src={t} alt="SEO services Georgia" style={{ width: "100%", marginTop: '2rem' }} />
             <div className="wrapper">
               <span className="ring ring-1"></span>
               <span className="ring ring-2"></span>
@@ -98,7 +103,7 @@ const Home = () => {
               95% of pages get no organic traffic from Google once you stop paying for their ads.<br></br>Hire us as your expert digital marketing in
               Georgia.
             </p>
-            <p style={{ color: "white", fontSize: "18px", textAlign: 'center' }}>
+            <p style={{ color: "white", fontSize: "18px", textAlign: "center" }}>
               Google Ads can be powerful, but they're expensive, short-lived, and require constant management.
             </p>
             <div className="comparison-table">
@@ -163,15 +168,13 @@ const Home = () => {
               <div className="square1">
                 <div id="text-div">
                   <h3>Build Visibility That Lasts.</h3>
-                  <p style={{marginBottom: '20px'}}>
+                  <p style={{ marginBottom: "20px" }}>
                     If your website or social media content isn’t optimized,
                     <b style={{ fontWeight: "400", color: "rgba(255, 255, 255, 0.6)" }}>
                       running ads can be a waste since poor rankings and weak engagement will make it hard to turn clicks into customers.
                     </b>
                   </p>
-                  <p>
-                   We'll optimize your Google MyBusiness Profile so that you're the first solution when new customers need help.
-                  </p>
+                  <p>We'll optimize your Google MyBusiness Profile so that you're the first solution when new customers need help.</p>
                 </div>
                 <img src={googleRank} alt="SEO services Georgia" />
               </div>
@@ -247,7 +250,7 @@ const Home = () => {
               <Link className="acc-btn" to="/" style={{ marginTop: "2rem" }}>
                 <img src={btn} alt="digital marketing Georgia" />
               </Link>
-              <img src={box} alt="digital marketing Georgia" style={{ position: "absolute", marginTop: "-6rem", zIndex: "-1", width: '100%' }} />
+              <img src={box} alt="digital marketing Georgia" style={{ position: "absolute", marginTop: "-6rem", zIndex: "-1", width: "100%" }} />
             </div>
           </div>
           <section class="contact-section">
