@@ -17,10 +17,10 @@ const GetStarted = () => {
       <section class="contact-section" style={{marginTop: '6rem'}}>
         <div class="contact-left">
           <h1>We can't wait to embark on this journey with you</h1>
-          <p>SEO (so you get found)</p>
-          <p>Content (so people trust you)</p>
-          <p>Social Media (so you stay top-of-mind)</p>
-          <p>Analytics (so you can track every win)</p>
+          <p>SEO (So you get found)</p>
+          <p>Content (So people trust you)</p>
+          <p>Social Media (So you stay top-of-mind)</p>
+          <p>Analytics (So you can track every win)</p>
           <div class="contact-info">
             <div class="info-item">
               <span>📧</span>

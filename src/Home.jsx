@@ -38,7 +38,7 @@ const Home = () => {
             <Link to="/">
               <img src={btn2} alt="Digital Marketing Georgia - Local SEO and Social Media Strategy" />
             </Link>
-            <Link to="/">
+            <Link to="/get-started">
               <img src={btn3} alt="Digital Marketing Georgia - Local SEO and Social Media Strategy" />
             </Link>
           </div>
