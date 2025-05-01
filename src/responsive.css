@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1000px) {
+    .info-1 img{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .info-1 {
+        flex-direction: column;
+    }
+}

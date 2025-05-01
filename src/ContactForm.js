@@ -1,10 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState  } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
 //   const [isSubmitting, setIsSubmitting] = useState(false);
 //   const [stateMessage, setStateMessage] = useState(null);
   const form = useRef();
+  const [message, setMessage] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -16,6 +17,7 @@ const ContactForm = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          setMessage('We have receieved your request, Our team will get in touch with you ASAP. Thank you')
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -28,6 +30,7 @@ const ContactForm = () => {
       <label>Email</label>
       <input type="email" name="reply_to" className="field"/>
       <input type="submit" value="Send" className="btn"/>
+      {message && <p className="success-message" style={{color: 'white'}}>{message}</p>}
     </form>
   );
 };

@@ -8,6 +8,7 @@ import btn3 from "./btn3.svg";
 import graph from "./graph.svg";
 import logo from "./logo.svg";
 import globe from "./globe.svg";
+import icon from "./googleicon.svg";
 import ill from "./ill.svg";
 import googleRank from "./google-rank.svg";
 import t from "./t.svg";
@@ -15,6 +16,7 @@ import box from "./box.svg";
 import bullet from "./bulletPoint.svg";
 import ContactForm from "./ContactForm";
 import Footer from "./Footer";
+import FAQSection from "./FAQSection";
 
 const Home = () => {
   return (
@@ -23,9 +25,9 @@ const Home = () => {
       <div className="content">
         <div className="landing">
           <div className="category">
-            <img src={stars} alt="Ai Sparkle" />
+            <img src={stars} alt="Ai Content Optimization" />
             <p style={{ margin: "0" }} className="cat-text">
-              Grow using Ai
+              #1 AI Digital Marketing Service in Georgia
             </p>
           </div>
           <h2>
@@ -34,10 +36,10 @@ const Home = () => {
           <p id="subtitle">You run the business. We’ll make it grow out of orbit.</p>
           <div className="btn-box">
             <Link to="/">
-              <img src={btn2} alt="Ai Sparkle" />
+              <img src={btn2} alt="Digital Marketing Georgia - Local SEO and Social Media Strategy" />
             </Link>
             <Link to="/">
-              <img src={btn3} alt="Ai Sparkle" />
+              <img src={btn3} alt="Digital Marketing Georgia - Local SEO and Social Media Strategy" />
             </Link>
           </div>
           <video loop muted autoPlay>
@@ -45,18 +47,18 @@ const Home = () => {
             Your browser does not support the video tag.
           </video>
           <div className="info-1">
-            <div>
-              <h4 style={{ color: "white", fontSize: "20px", fontWeight: "600", letterSpacing: "-0.8px" }}>
-                Optimize with ease and climb the Google<br></br>Search Engine ladder like never before.
+            <div id="info-1-text">
+              <h4 style={{ color: "white", fontSize: "20px", fontWeight: "600", letterSpacing: "-0.8px", maxWidth: "400px" }}>
+                Optimize your content with Orbitly;<br></br>The most affordable Digital Marketing Service in Georgia.
               </h4>
               <p id="gradient-title">All done-for-you marketing service:</p>
               <p>💻 Website Landing Page Optimization</p>
-              <p>🔍 SEO Optimized Blog Posts</p>
+              <p>🔍 Ai SEO Optimized Content</p>
               <p>📱 Social Media Exposure</p>
-              <p>🧲 Lead Magnet Implementation</p>
+              <p><img src={icon} alt="Google MyBusiness Optimization" style={{width: '16px'}}/> Google MyBusiness Profile Optimization</p>
               <p style={{ marginBottom: "26px" }}>📈 Traffic Analytics Report</p>
             </div>
-            <img src={graph} alt="Ai Sparkle" />
+            <img src={graph} alt="Digital Marketing Georgia - Local SEO and Social Media Strategy" />
           </div>
           <div className="text-box">
             <div className="category">
@@ -69,14 +71,14 @@ const Home = () => {
               focus. Fully done-for-you so you can focus on running your business.
             </h3>
           </div>
-          <div className="text-box" style={{ marginTop: "10rem", position: "relative" }}>
-            <img src={globe} alt="Ai Globe" />
+          <div className="text-box" style={{ position: "relative" }}>
+            <img src={globe} alt="Georgia digital marketing experts" style={{width: '100%'}}/>
             <div className="category" style={{ margin: "-180px auto 0 auto" }}>
               <p style={{ margin: "0" }}>Process</p>
             </div>
             <h3>Your path for out-of-this world growth.</h3>
             <p id="subtitle">A simple, effective approach to deliver excellence.</p>
-            <img src={t} alt="Orbitly SEO Optimization Process" style={{ marginTop: "3rem" }} />
+            <img src={t} alt="SEO services Georgia" style={{ width: '100%' }} />
             <div className="wrapper">
               <span className="ring ring-1"></span>
               <span className="ring ring-2"></span>
@@ -85,7 +87,7 @@ const Home = () => {
               <span className="arrow"></span>
             </div>
           </div>
-          <div className="text-box" style={{ marginTop: "4rem" }}>
+          <div className="text-box">
             <div className="category">
               <p style={{ margin: "0" }} className="cat-text">
                 Services
@@ -93,10 +95,10 @@ const Home = () => {
             </div>
             <h3>We turn your business into a solution everyone needs.</h3>
             <p id="subtitle">
-              95% of pages get no organic traffic from Google once you stop paying for their ads.<br></br>Hire us as your personal digital marketing
-              team.
+              95% of pages get no organic traffic from Google once you stop paying for their ads.<br></br>Hire us as your expert digital marketing in
+              Georgia.
             </p>
-            <p style={{ color: "white", fontSize: "18px" }}>
+            <p style={{ color: "white", fontSize: "18px", textAlign: 'center' }}>
               Google Ads can be powerful, but they're expensive, short-lived, and require constant management.
             </p>
             <div className="comparison-table">
@@ -136,7 +138,7 @@ const Home = () => {
               <div className="column orbitly-column">
                 <div className="header orbitly-header">
                   <span className="orbitly-logo">
-                    <img src={logo} alt="Orbitly Logo" />
+                    <img src={logo} alt="Orbitly Digital Marketing Georgia" />
                     <p>Orbitly</p>
                   </span>
                 </div>
@@ -151,7 +153,7 @@ const Home = () => {
               Don't fall for digital marketing agencies that take your money and spend $1,500 - $5,000 on ads just for temporary numbers.
             </p>
           </div>
-          <div className="text-box" style={{ marginTop: "4rem" }}>
+          <div className="text-box">
             <div className="category">
               <p style={{ margin: "0" }}>Orbitly Digital Marketing</p>
             </div>
@@ -161,25 +163,28 @@ const Home = () => {
               <div className="square1">
                 <div id="text-div">
                   <h3>Build Visibility That Lasts.</h3>
-                  <p>
+                  <p style={{marginBottom: '20px'}}>
                     If your website or social media content isn’t optimized,
                     <b style={{ fontWeight: "400", color: "rgba(255, 255, 255, 0.6)" }}>
                       running ads can be a waste since poor rankings and weak engagement will make it hard to turn clicks into customers.
                     </b>
                   </p>
+                  <p>
+                   We'll optimize your Google MyBusiness Profile so that you're the first solution when new customers need help.
+                  </p>
                 </div>
-                <img src={googleRank} alt="Google SEO Rank graphic" />
+                <img src={googleRank} alt="SEO services Georgia" />
               </div>
               <div className="square2">
                 <div id="text-div">
-                  <h2 style={{ textAlign: "left", marginTop: '0' }}>Did you know..</h2>
+                  <h2 style={{ textAlign: "left", marginTop: "0" }}>Did you know..</h2>
                   <p>
                     A lot of businesses post great content —{" "}
                     <b style={{ fontWeight: "400", color: "rgba(255, 255, 255, 0.6)" }}>
-                      but without strategic Targeting, Data Analysis, and ptimized SEO, they miss 80% of potential growth.
+                      but without strategic Targeting, Data Analysis, and optimized SEO, they miss 80% of potential growth.
                     </b>
                   </p>
-                  <p style={{marginBottom: '40px'}}>For example, using the wrong hashtags, could be setting you back 80%</p>
+                  <p style={{ marginBottom: "40px" }}>For example, using the wrong hashtags, could be setting you back 80%</p>
                   <h3>We're Your #1 Supporter</h3>
                   <p>
                     We completely understand the challenges you're facing.
@@ -187,7 +192,7 @@ const Home = () => {
                       We're here to help you grow with clarity, confidence, and results that actually matter.
                     </b>
                   </p>
-                  <img src={ill} alt="Google SEO Rank graphic" />
+                  <img src={ill} alt="small business marketing Georgia" />
                 </div>
               </div>
             </div>
@@ -212,62 +217,61 @@ const Home = () => {
               <div className="bullet-box">
                 <div className="bullets">
                   <span>
-                    <img src={bullet} alt="Pricing Background Box" />
+                    <img src={bullet} alt="digital marketing Georgia" />
                     <p>Done-For-You Website & Funnel Setup</p>
                   </span>
                   <span>
-                    <img src={bullet} alt="Pricing Background Box" />
+                    <img src={bullet} alt="digital marketing Georgia" />
                     <p>AI-Powered Traffic & Lead Generation</p>
                   </span>
                   <span>
-                    <img src={bullet} alt="Pricing Background Box" />
+                    <img src={bullet} alt="digital marketing Georgia" />
                     <p>Performance Analytics Reports</p>
                   </span>
                 </div>
                 <div className="bullets">
                   <span>
-                    <img src={bullet} alt="Pricing Background Box" />
+                    <img src={bullet} alt="digital marketing Georgia" />
                     <p>Content & Social Media Promotion</p>
                   </span>
                   <span>
-                    <img src={bullet} alt="Pricing Background Box" />
+                    <img src={bullet} alt="digital marketing Georgia" />
                     <p>Competitive Analysis</p>
                   </span>
                   <span>
-                    <img src={bullet} alt="Pricing Background Box" />
-                    <p>100% more affordable</p>
+                    <img src={bullet} alt="digital marketing Georgia" />
+                    <p>✨Enjoy Monthly Perks✨</p>
                   </span>
                 </div>
               </div>
               <Link className="acc-btn" to="/" style={{ marginTop: "2rem" }}>
-                <img src={btn} alt="Onboarding Button" />
+                <img src={btn} alt="digital marketing Georgia" />
               </Link>
-              <img src={box} alt="Pricing Background Box" style={{ position: "absolute", marginTop: "-6rem", zIndex: "-1" }} />
+              <img src={box} alt="digital marketing Georgia" style={{ position: "absolute", marginTop: "-6rem", zIndex: "-1", width: '100%' }} />
             </div>
           </div>
           <section class="contact-section">
             <div class="contact-left">
-             
               <h1>We can't wait to embark on this journey with you</h1>
               <p>Whether you have questions or are ready to discuss your business, we’re here to help. Reach out today.</p>
               <div class="contact-info">
                 <div class="info-item">
                   <span>📧</span>
-                  <span>admin@raddision.com</span>
+                  <span>hello@orbitlymarketing.com</span>
                 </div>
-                <div class="info-item">
+                {/* <div class="info-item">
                   <span>📞</span>
                   <span>(969) 819-8061</span>
-                </div>
+                </div> */}
                 <div class="info-item">
                   <span>📍</span>
                   <span>Summervile, GA</span>
                 </div>
               </div>
             </div>
-
             <ContactForm />
           </section>
+          <FAQSection />
         </div>
         <Footer />
       </div>
