@@ -4,6 +4,10 @@ import Blog from "./Blog"
 import GetStarted from "./GetStarted";
 import About from "./About";
 import FAQ from "./FAQ";
+import WebDesign from "./WebDesign";
+import GoogleProfile from "./GoogleProfile";
+import SeoOptimization from "./SeoOptimization";
+import SocialMedia from "./SocialMedia";
 
 const App = () => {
   return (
@@ -15,10 +19,10 @@ const App = () => {
         <Route path="/get-started" element={<GetStarted />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/faq" element={<FAQ />} />
-        {/* 
-        <Route path="/services" element={<Blog />} />
-        <Route path="/seo-optimization" element={<Blog />} />
-        <Route path="/social-media-optimization" element={<Blog />} /> */}
+        <Route path="/website-development-and-design" element={<WebDesign />} />
+        <Route path="/google-business-profile-optimization" element={<GoogleProfile />} />
+        <Route path="/seo-optimization" element={<SeoOptimization />} />
+        <Route path="/social-media-content-design" element={<SocialMedia />} />
         <Route path="*" element={<h1>404 - Not Found</h1>} />
       </Routes>
     </Router>

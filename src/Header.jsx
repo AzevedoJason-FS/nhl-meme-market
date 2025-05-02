@@ -32,10 +32,10 @@ const Header = () => {
           </Link>
           {dropdownOpen && (
             <div className="dropdown-menu">
-            <Link to="/research/LeadrPro">Website Design & Development</Link>
-            <Link to="/research/LeadrPro">Google Business Profile Optimization</Link>
-            <Link to="/research/LeadrPro">SEO Optimization</Link>
-            <Link to="/research/LeadrPro">Social Media Content Design</Link>
+            <Link to="/website-development-and-design">Website Design & Development</Link>
+            <Link to="/google-business-profile-optimization">Google Business Profile Optimization</Link>
+            <Link to="/seo-optimization">SEO Optimization</Link>
+            <Link to="/social-media-content-design">Social Media Content Design</Link>
             </div>
           )}
         </div>
