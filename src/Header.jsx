@@ -27,7 +27,7 @@ const Header = () => {
           onMouseEnter={() => setDropdownOpen(true)}
           onMouseLeave={() => setDropdownOpen(false)}
         >
-          <Link to="/">
+          <Link to="/services">
           <span className="dropdown-toggle">Services</span>
           </Link>
           {dropdownOpen && (

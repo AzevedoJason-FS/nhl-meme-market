@@ -35,7 +35,7 @@ const Home = () => {
           </h2>
           <p id="subtitle">You run the business. We’ll make it grow out of orbit.</p>
           <div className="btn-box">
-            <Link to="/">
+            <Link to="/services">
               <img src={btn2} alt="Digital Marketing Georgia - Local SEO and Social Media Strategy" />
             </Link>
             <Link to="/get-started">
