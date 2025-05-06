@@ -4,6 +4,7 @@ import axios from "axios";
 import Header from "./Header";
 import quote from "./quotes.svg";
 import clock from "./clock.svg";
+import Footer from "./Footer";
 
 const Blog = () => {
   const [data, setData] = useState([]);
@@ -51,7 +52,7 @@ const Blog = () => {
   return (
     <div>
       <Header />
-      <div className="content" style={{margin: '8rem auto'}}>
+      <div className="content" style={{marginTop: '8rem'}}>
         <span style={{ display: "flex", borderBottom: "1px solid rgba(255, 255, 255, 0.14)", alignItems: "center", marginTop: "0rem" }}>
           <img src={quote} alt="Quotation Icon" style={{ width: "54px" }} />
           <h2 style={{ color: "white", letterSpacing: "-0.8px", fontSize: "42px", margin: "20px" }}>Orbitly Blog</h2>
@@ -129,6 +130,7 @@ const Blog = () => {
             </div>
           ))}
         </div>
+        <Footer />
       </div>
     </div>
   );

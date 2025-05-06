@@ -18,14 +18,14 @@ const GetStarted = () => {
             targeting, and community engagement to get you seen by the right people.
           </p>
           <h3 style={{ color: "white", margin: "auto", marginTop: "40px" }}>
-            We aim at being the most affordable solution for local small businesses in Georgia.
+            We aim at being the most affordable digital marketing solution for local small businesses in Georgia.
           </h3>
         </div>
         <div className="square2">
           <img src={map} alt="cheap digital marketing Georgia" style={{ maxWidth: "360px" }} />
         </div>
       </div>
-      <section class="contact-section" style={{ marginTop: "6rem" }}>
+      <section class="contact-section" style={{ marginTop: "4rem" }}>
         <div class="contact-left">
           <h1>The most affordable solution to beating your local competition.</h1>
           <p>SEO (So you get found)</p>
