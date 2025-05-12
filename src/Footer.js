@@ -21,6 +21,7 @@ const Footer = () => {
             <Link to="/google-business-profile-optimization">Google Business Profile Optimization</Link>
             <Link to="/seo-optimization">SEO Optimization</Link>
             <Link to="/social-media-content-design">Social Media Content Design</Link>
+            <Link to="/local-paper-advertising">Local Tabloid Advertising</Link>
           </div>
           <div class="footer-column">
             <h4>Resources</h4>

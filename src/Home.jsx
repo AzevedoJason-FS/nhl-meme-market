@@ -17,6 +17,7 @@ import bullet from "./bulletPoint.svg";
 import ContactForm from "./ContactForm";
 import Footer from "./Footer";
 import FAQSection from "./FAQSection";
+import ServiceSelector from "./ServiceSelector";
 
 const Home = () => {
   return (
@@ -30,10 +31,10 @@ const Home = () => {
               #1 AI Digital Marketing Service in Georgia
             </p>
           </div>
-          <h2>
+          <h1>
             Your business should grow while you sleep.<br></br>It does with us.
-          </h2>
-          <p id="subtitle">You run the business. We’ll make it grow out of orbit.</p>
+          </h1>
+          <h3 id="subtitle">You run the business. We’ll make it grow out of orbit.</h3>
           <div className="btn-box">
             <Link to="/services">
               <img src={btn2} alt="Digital Marketing Georgia - Local SEO and Social Media Strategy" />
@@ -78,12 +79,12 @@ const Home = () => {
             <div className="category" style={{ margin: "-180px auto 0 auto" }}>
               <p style={{ margin: "0" }}>Process</p>
             </div>
-            <h3>Your path for out-of-this world growth.</h3>
-            <p id="subtitle">
-              We understand how to grow visibility in your specific market.<br></br>Whether you're in Georgia or beyond, we combine localized SEO, smart ad
-              targeting, and community engagement to get you seen by the right people.
-            </p>
-            <img src={t} alt="SEO services Georgia" style={{ width: "100%", marginTop: '2rem' }} />
+            <h2>Your path for out-of-this world growth.</h2>
+            <h3 id="subtitle">
+              We understand how to grow visibility in your specific market.<br></br>Whether you're in Georgia or beyond, we combine localized SEO,
+              smart ad targeting, and community engagement to get you seen by the right people.
+            </h3>
+            <img src={t} alt="SEO services Georgia" style={{ width: "100%", marginTop: "2rem" }} />
             <div className="wrapper">
               <span className="ring ring-1"></span>
               <span className="ring ring-2"></span>
@@ -98,11 +99,20 @@ const Home = () => {
                 Services
               </p>
             </div>
-            <h3>We turn your business into a solution everyone needs.</h3>
-            <p id="subtitle">
+            <h3>Every Platform, Every Angle — We’ve Got You Covered.</h3>
+            <ServiceSelector />
+          </div>
+          <div className="text-box">
+            <div className="category">
+              <p style={{ margin: "0" }} className="cat-text">
+                Compare
+              </p>
+            </div>
+            <h2>We turn your business into a solution everyone needs.</h2>
+            <h3 id="subtitle">
               95% of pages get no organic traffic from Google once you stop paying for their ads.<br></br>Hire us as your expert digital marketing in
               Georgia.
-            </p>
+            </h3>
             <p style={{ color: "white", fontSize: "18px", textAlign: "center" }}>
               Google Ads can be powerful, but they're expensive, short-lived, and require constant management.
             </p>
@@ -162,12 +172,12 @@ const Home = () => {
             <div className="category">
               <p style={{ margin: "0" }}>Orbitly Digital Marketing</p>
             </div>
-            <h3>Why choose Orbitly.</h3>
-            <p id="subtitle">We gear up your business so it can succeed online </p>
+            <h2>Why choose Orbitly.</h2>
+            <h3 id="subtitle">We gear up your business so it can succeed online </h3>
             <div className="square-content">
               <div className="square1">
                 <div id="text-div">
-                  <h3>Build Visibility That Lasts.</h3>
+                  <h3>We Offer Local Newspaper Advertising</h3>
                   <p style={{ marginBottom: "20px" }}>
                     If your website or social media content isn’t optimized,
                     <b style={{ fontWeight: "400", color: "rgba(255, 255, 255, 0.6)" }}>
@@ -180,21 +190,14 @@ const Home = () => {
               </div>
               <div className="square2">
                 <div id="text-div">
-                  <h2 style={{ textAlign: "left", marginTop: "0" }}>Did you know..</h2>
-                  <p>
-                    A lot of businesses post great content —{" "}
+                  <h3>Build Visibility That Lasts.</h3>
+                  <p style={{ marginBottom: "20px" }}>
+                    If your website or social media content isn’t optimized,
                     <b style={{ fontWeight: "400", color: "rgba(255, 255, 255, 0.6)" }}>
-                      but without strategic Targeting, Data Analysis, and optimized SEO, they miss 80% of potential growth.
+                      running ads can be a waste since poor rankings and weak engagement will make it hard to turn clicks into customers.
                     </b>
                   </p>
-                  <p style={{ marginBottom: "40px" }}>For example, using the wrong hashtags, could be setting you back 80%</p>
-                  <h3>We're Your #1 Supporter</h3>
-                  <p>
-                    We completely understand the challenges you're facing.
-                    <b style={{ fontWeight: "400", color: "rgba(255, 255, 255, 0.6)" }}>
-                      We're here to help you grow with clarity, confidence, and results that actually matter.
-                    </b>
-                  </p>
+                  <p>We'll optimize your Google MyBusiness Profile so that you're the first solution when new customers need help.</p>
                   <img src={ill} alt="small business marketing Georgia" />
                 </div>
               </div>
@@ -204,11 +207,11 @@ const Home = () => {
             <div className="category">
               <p style={{ margin: "0" }}>Pricing</p>
             </div>
-            <h3>
+            <h2>
               We like keeping things simple<br></br>
               One plan. One price. infinite growth
-            </h3>
-            <p id="subtitle">Online Marketing has never been so affordable</p>
+            </h2>
+            <h3 id="subtitle">Online Marketing has never been so affordable</h3>
             <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center", marginTop: "2rem", flexDirection: "column" }}>
               <span style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "20px" }}>
                 <h3
@@ -255,8 +258,8 @@ const Home = () => {
           </div>
           <section class="contact-section">
             <div class="contact-left">
-              <h1>We can't wait to embark on this journey with you</h1>
-              <p>Whether you have questions or are ready to discuss your business, we’re here to help. Reach out today.</p>
+              <h2>We can't wait to embark on this journey with you</h2>
+              <h3 id="subtitle" style={{textAlign: 'left'}}>Whether you have questions or are ready to discuss your business, we’re here to help. Reach out today.</h3>
               <div class="contact-info">
                 <div class="info-item">
                   <span>📧</span>

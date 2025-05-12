@@ -10,6 +10,7 @@ import SeoOptimization from "./SeoOptimization";
 import SocialMedia from "./SocialMedia";
 import NotFound from "./NotFound";
 import Services from "./Services";
+import LocalPaper from "./LocalPaper";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/google-business-profile-optimization" element={<GoogleProfile />} />
         <Route path="/seo-optimization" element={<SeoOptimization />} />
         <Route path="/social-media-content-design" element={<SocialMedia />} />
+        <Route path="/local-paper-advertising" element={<LocalPaper />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
