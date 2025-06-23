@@ -27,7 +27,7 @@ const GetStarted = () => {
       </div>
       <section class="contact-section" style={{ marginTop: "4rem" }}>
         <div class="contact-left">
-          <h1>The most affordable solution to beating your local competition.</h1>
+          <h1 style={{color: 'white'}}>The most affordable solution to beating your local competition.</h1>
           <p>SEO (So you get found)</p>
           <p>Content (So people trust you)</p>
           <p>Social Media (So you stay top-of-mind)</p>
