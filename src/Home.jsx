@@ -260,7 +260,7 @@ const Home = () => {
             <div class="contact-left">
               <h2>We can't wait to embark on this journey with you</h2>
               <h3 id="subtitle" style={{textAlign: 'left'}}>Whether you have questions or are ready to discuss your business, we’re here to help. Reach out today.</h3>
-              <div class="contact-info">
+              <div className="contact-info">
                 <div class="info-item">
                   <span>📧</span>
                   <span>hello@orbitlymarketing.com</span>

@@ -12,31 +12,26 @@ const Header = () => {
   return (
     <header>
       <Link to="/">
-      <span className="logo">
-        <img src={logo} alt="Orbitly Logo" />
-        <h2>Orbitly</h2>
-      </span>
+        <span className="logo">
+          <img src={logo} alt="Orbitly Logo" />
+          <h2>Orbitly</h2>
+        </span>
       </Link>
 
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
         <Link to="/about-us">About us</Link>
 
-        {/* Dropdown for Services */}
-        <div
-          className="dropdown"
-          onMouseEnter={() => setDropdownOpen(true)}
-          onMouseLeave={() => setDropdownOpen(false)}
-        >
-          <Link to="/services">
-          <span className="dropdown-toggle">Services</span>
-          </Link>
+        <div className="dropdown" onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
+          <span className="dropdown-toggle">
+            <Link to="/services">Services</Link>
+          </span>
           {dropdownOpen && (
             <div className="dropdown-menu">
-            <Link to="/website-development-and-design">Website Design & Development</Link>
-            <Link to="/google-business-profile-optimization">Google Business Profile Optimization</Link>
-            <Link to="/seo-optimization">SEO Optimization</Link>
-            <Link to="/social-media-content-design">Social Media Content Design</Link>
-            <Link to="/local-paper-advertising">Local Tabloid Advertising</Link>
+              <Link to="/website-development-and-design">Website Design & Development</Link>
+              <Link to="/google-business-profile-optimization">Google Business Profile Optimization</Link>
+              <Link to="/seo-optimization">SEO Optimization</Link>
+              <Link to="/social-media-content-design">Social Media Content Design</Link>
+              <Link to="/local-paper-advertising">Local Tabloid Advertising</Link>
             </div>
           )}
         </div>
@@ -50,9 +45,7 @@ const Header = () => {
       </Link>
 
       <div className="hamburger" onClick={toggleMenu}>
-        <div className={`bar ${isOpen ? "open" : ""}`}></div>
-        <div className={`bar ${isOpen ? "open" : ""}`}></div>
-        <div className={`bar ${isOpen ? "open" : ""}`}></div>
+        ☰
       </div>
     </header>
   );
